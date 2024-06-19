@@ -12,11 +12,18 @@ document.addEventListener("DOMContentLoaded", function() {
             return;
         }
 
-        if (emailInput.value.trim() === '') {
+         const email = emailInput.value.trim();
+        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+        if (email === '') {
             alert('Please enter your email.');
+            return;
+        } else if (!emailPattern.test(email)) {
+            alert('Please enter a valid email address.');
             return;
         }
 
+        
         if (messageInput.value.trim() === '') {
             alert('Please enter your message.');
             return;
