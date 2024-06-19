@@ -12,6 +12,9 @@ document.getElementById("signupForm").addEventListener("submit", function(event)
       message += "Password: " + password;
       document.getElementById("message").innerText = message;
     } else {
+        document.getElementById("message").innerText = "Password must be at least 8 characters.";
+    }
+} else {
       document.getElementById("message").innerText = "Please fill out all fields.";
     }
   });
