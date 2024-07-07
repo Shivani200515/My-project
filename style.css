@@ -1,10 +1,21 @@
-/* Reset and general styles */
 * {
 
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+}
+
+    
+/* Header styles */
+header {
+    background-color: #09193a;
+    color: #fff;
+    padding: 10px 0;
+}
+
+.logo {
+    float: left;
 }
 
 /* Body and general layout */
@@ -20,19 +31,6 @@ body {
 
 .container {
     width: 80%;
-    margin: 0 auto;
-    padding: 20px 0;
-}
-
-/* Header styles */
-header {
-    background-color: #09193a;
-    color: #fff;
-    padding: 10px 0;
-}
-
-.logo {
-    float: left;
     margin-left: 20px;
 }
 
@@ -119,9 +117,10 @@ nav ul li a:hover {
 /* Products section styles */
 .products {
     margin-top: 20px;
-    display: flex
+    display: flex;
     flex-wrap:wrap;
     justify-items: space-between;
+    align-items: center;
 }
 
 .product-item {
@@ -217,5 +216,8 @@ footer nav ul li a:hover {
         max-width: 90%; /* Adjust max-width for smaller screens */
     }
 }
-
+    
+    
+ 
+   
   
