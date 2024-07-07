@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gadget hub</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
@@ -12,7 +15,6 @@
             <img src="images/img-logo.png" width="125px">
         </div>
         <div class="container">
-            <h1>Welcome to Gadgethub </h1>
             <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
@@ -20,105 +22,113 @@
                     <li><a href="signup.html">Signup</a></li>
                     <li><a href="aboutus.html">About Us</a></li>
                     <li><a href="contact.html">Contact</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropbtn">Category</a>
+                        <div class="dropdown-content">
+                            <select id="category-select">
+                                <option value="Mobiles">Mobiles</option>
+                                <option value="Laptops">Laptops</option>
+                                <option value="Smartwatches">Smartwatches</option>
+                                <!-- Add other categories as needed -->
+                            </select>
+                        </div>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-
-    <section class="hero">
+    <section class="hero" style="background-image: url('images/heroimg.jpg');">
         <div class="container">
+            <div class="hero-content">
             <h2>Welcome to Our Store!</h2>
             <p>Discover amazing products at Reasonable prices.</p>
         </div>
+        </div>
     </section>
+    
+
+        
 
     <section class="products">
-        <div class="container">
+        <div class="product-container">
             <h2>Featured Products</h2>
-            <div class="container">
+
+            <!--Product block 1-->
+            <div class="product-item" data-category="Mobiles">
                 <img src="images/img1.avif"width="250px" alt="Samsung">
                 <h3>Samsung</h3>
                 <p><b>Samsung galaxy S21(Jazz blue,128 GB)(8 Gb RAM)</b></p>
                 <p>50,0000</p>
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            <div class="container">
+           <!--Product block 2-->
+            <div class="product-item" data-category="Mobiles">
                 <img src="images/img2.webp"width="250px" alt="Apple">
                 <h3>Apple</h3>
                 <p><b>Apple iPhone 12 Pro Max(Pacific Blue,128 GB)(8 Gb RAM)</b></p>
                 <p>1,19,000</p>
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            <div class="container">
+            <!--Product block 3-->
+            <div class="product-item" data-category="Mobiles">
                 <img src="images/img3.webp"width="250px" alt="Samsung">
                 <h3>Samsung</h3>
                 <p>SAMSUNG Galaxy F34 5G (Mystic Green,128GB)(16 GB RAM)</p>
                 <p>14,9999</p>
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            
-            <div class="container">
+            <!--Product block 4-->
+            <div class="product-item" data-category="Mobiles">
                 <img src="images/img5.png"width="250px" alt="OPPO">
                 <h3>OPPO</h3>
                 <p>OPPO A59  5G (Pure Black,128GB)(8 GB RAM)</p>
                 <p>15,9999</p>
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            <div class="container">
+            <!--Product block 5-->
+            <div class="product-item" data-category="Smartwatches">
                 <img src="images/img6.webp"width="250px" alt="Fastrack">
                 <h3>Fastrack</h3>
                 <p>Fastrack Limitless FS1 Smartwatch|Biggest 1.95" Horizon Curve Display</p>
                 <p>1,999</p>
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            <div class="container">
-                <img src="images/img7.webp"width="250px" alt="Fastrack">
-                <h3>Fastrack</h3>
+
+            <!--Product block 6-->
+            <div class="product-item" data-category="Smartwatches">
+                <img src="images/img7.webp"width="250px" alt="Noise">
+                <h3>Noise</h3>
                 <p>Noise Colorfit Icon 2 1.8'' Display with Bluetooth Calling, AI Voice Assistant Smartwatch  (Blue Strap, Regular)</p>
                 <p>2,999</p>           
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
 
-            <div class="container">
+            <!--Product block 7-->
+            <div class="product-item" data-category="Laptops">
                 <img src="images/img8.webp"width="250px" alt="HP">
                 <h3>HP</h3>
                 <p>HP 2023 Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) 15s-fy5003TU Thin and Light Laptop</p>
                 <p>36,990</p>            
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn"> Add to cart</a>
             </div>
 
-            <div class="container">
-                <img src="images/img9.webp"width="250px" alt="DELL">
+            <!--product block 8-->
+            <div class="product-item" data-category="Laptops">
+                <img src="images/img9.webp" width="250px" alt="DELL">
                 <h3>DELL</h3>
                 <p> DELL Intel Core i3 12th Gen 1215U - (8 GB/512 GB SSD/Windows 11 Home) New Inspiron 15 Laptop Thin and Light Laptop</p>
                 <p>36,990</p>          
-                <a href="#" class="bttn">Buy Now</a>
+                <a href="#" class="bttn">Add to cart</a>
             </div>
             
         </div>
 
-
-
-
-        
-
-
-
         </section>
-
-
-
-
-
-
-
-
-    
 
     <footer>
             <div class="footer-content">
@@ -138,6 +148,17 @@
             </div>
         </footer>
 
-
+<script src="script.js"></script>
 </body>
 </html>
+
+  
+              
+
+
+        
+
+
+
+      
+               
